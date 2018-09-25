@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Object-One</title>
+</head>
+
+<style>
+
+.black{
+    background: black;
+}
+
+#milkbody{
+    width: 150px;
+    height: 250px;
+    position: relative;
+    top:350px;
+    left:300px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#milkbodytop {
+    position:relative;
+    top:-50px;
+    left:300px;
+    border-bottom: 150px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 50px;
+}
+
+#bottletop{
+    position:absolute;
+    height:50px;
+    width:50px;
+    left:-11px;
+    top:-30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: -1
+}
+
+#capblack{
+    position: absolute;
+    height:40px;
+    width: 50px;
+    left:-11px;
+    top:-60px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: -1
+}
+
+#strawinside {
+    position: absolute;
+    top:8px;
+    left:30px;
+    width: 6px;
+    height: 180px;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    -o-transform: skew(15deg);
+}
+
+#strawoutside1{
+position: absolute;
+    top:-105px;
+    left:-15px;
+    width: 6px;
+    height: 40px;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    -o-transform: skew(15deg);
+}
+
+#strawoutside2{
+position: absolute;
+    top:-137px;
+    left:-47px;
+    width: 6px;
+    height: 60px;
+    -webkit-transform: rotate(-80deg);
+  
+}
+
+#liquid1{
+    position: absolute;
+    width: 100px;
+    height: 190px;
+    top:185px;
+    left:-35px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#wave2{
+    position: absolute;
+    top:160px;
+    left:15px;
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;    
+}
+
+
+
+.white {
+    background: white;
+}
+
+#milkinside {
+    width: 120px;
+    height: 230px;
+    position: relative;
+    top:-45px;
+    left:315px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#milkbodytopinside{
+    position:absolute;
+    top:208px;
+    left:323px;
+    border-bottom: 155px solid white;
+    border-left: 46px solid transparent;
+    border-right: 46px solid transparent;
+    height: 0px;
+    width: 28px;
+}
+
+#bottletopwhite{
+    position:absolute;
+    height:30px;
+    width:30px;
+    left:-1px;
+    top:-20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#capwhite{
+    position: absolute;
+    height:23px;
+    width: 33px;
+    left:-2px;
+    top:-51px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#wave1{
+    position: absolute;
+    top:160px;
+    left:-35px;
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+</style>
+
+<body>
+
+    <div class="black" id="milkbody"> </div>
+    <div id="milkbodytop"> </div>
+    <div class="white" id="milkinside"> </div>
+    <div id="milkbodytopinside">
+    <div class="black" id="bottletop"> </div>
+    <div class="white" id="bottletopwhite"></div>
+    <div class="black" id="capblack"></div>
+    <div class="white" id="capwhite"></div>
+    <div class="black" id="strawinside"></div>
+    <div class="black" id="strawoutside1"></div>
+    <div class="black" id="strawoutside2"></div>
+    <div class="black" id="liquid1"></div>
+    <div class="white" id="wave1"></div>
+    <div class="black" id="wave2"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Object-Three</title>
+</head>
+
+<style>
+
+
+#top {
+	position:relative;
+	top: 100px;
+	left:100px;
+	width: 800px;
+	height: 80px;
+	-webkit-transform: skew(-60deg);
+	   -moz-transform: skew(40deg);
+	     -o-transform: skew(40deg);
+	background: black;
+}
+
+#side1{
+	position:absolute;
+	top:110px;
+	left:842px;
+	width: 0;
+	height: 0;
+	border-top: 80px solid transparent;
+	border-right: 140px solid black;
+	border-bottom: 80px solid transparent;
+}
+
+#side2{
+	position:absolute;
+	background:black;
+	top:190px;
+	left:842px;
+	width:140px;
+	height:400px;
+}
+
+#side3{
+	position:absolute;
+	top:500px;
+	left:842px;
+	width: 0;
+	height: 0;
+	border-top: 89px solid transparent;
+	border-left: 140px solid black;
+	border-bottom: 80px solid transparent;
+}
+
+#front1{
+	position: absolute;
+	top:190px;
+	left:40px;
+	width: 800px;
+	height:480px;
+	background:black;
+}
+
+#front2{
+	position: absolute;
+	top:205px;
+	left:55px;
+	width:770px;
+	height:450px;
+	background:white;
+}
+
+#window1 {
+	position:absolute;
+	top:280px;
+	left:120px;
+	width:400px;
+	height:300px;
+	background:black;
+}
+
+#window2{
+	position:absolute;
+	top:260px;
+	left:160px;
+	width:400px;
+	height:300px;
+	background:white;
+}
+
+#line1{
+	background:black;
+	position: absolute;
+	top:200px;
+	left:560px;
+	width:3px;
+	height:460px;
+}
+
+#line2{
+	background:black;
+	position: absolute;
+	top:200px;
+	left:620px;
+	width:3px;
+	height:460px;
+}
+
+#door{
+	background:black;
+	position:absolute;
+	top:220px;
+	left:570px;
+	width:40px;
+	height:420px;
+	border-radius:10px;
+}
+
+#monitor{
+	background: black;
+	position:absolute;
+	top:220px;
+	left:630px;
+	width:180px;
+	height:120px;
+	border-radius: 20px
+}
+
+#monitorwhite{
+	background: white;
+	position:absolute;
+	top:260px;
+	left:640px;
+	width:160px;
+	height:70px;
+	border-radius: 10px
+}
+
+#buttonscreen{
+	background: black;
+	position:absolute;
+	top:350px;
+	left:630px;
+	width:180px;
+	height:300px;
+	border-radius: 10px
+}
+
+#button1{
+	background:white;
+	position:absolute;
+	top:400px;
+	left:650px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#button2{
+	background:white;
+	position:absolute;
+	top:400px;
+	left:700px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#button3{
+	background:white;
+	position:absolute;
+	top:400px;
+	left:750px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#button4{
+	background:white;
+	position:absolute;
+	top:445px;
+	left:650px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+
+#button5{
+	background:white;
+	position:absolute;
+	top:445px;
+	left:700px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#button6{
+	background:white;
+	position:absolute;
+	top:445px;
+	left:750px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#button7{
+	background:white;
+	position:absolute;
+	top:490px;
+	left:650px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#button8{
+	background:white;
+	position:absolute;
+	top:490px;
+	left:700px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#button9{
+	background:white;
+	position:absolute;
+	top:490px;
+	left:750px;
+	width:40px;
+	height:35px;
+	border-radius: 8px
+}
+
+#timesetter1{
+	position: absolute;
+	top: 550px;
+	left:680px;
+	width: 80px;
+	height: 80px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#timesetter2{
+	position: absolute;
+	top: 555px;
+	left:685px;
+	width: 70px;
+	height: 70px;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#rectangle1{
+	position:absolute;
+	top:555px;
+	left:715px;
+	width:8px;
+	height:20px;
+	background:white;
+
+
+}
+
+#foot1 {
+  position: absolute;
+  top:645px;
+  left:120px;
+  width: 30px;
+  height: 20px;
+  margin: 20px 0;
+  background: black;
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+}
+#foot1:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+#foot2 {
+  position: absolute;
+  top:645px;
+  left:690px;
+  width: 30px;
+  height: 20px;
+  margin: 20px 0;
+  background: black;
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+}
+#foot2:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+
+
+</style>
+
+
+
+
+
+<body>
+
+<div id="top"></div>
+<div id="side1"></div>
+<div id="side2"></div>
+<div id="side3"></div>
+<div id="front1"></div>
+<div id="front2"></div>
+<div id="window1"> </div>
+<div id="window2"></div>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="door"></div>
+<div id="monitor"></div>
+<div id="monitorwhite"></div>
+<div id="buttonscreen"></div>
+<div id="button1"></div>
+<div id="button2"></div>
+<div id="button3"></div>
+<div id="button4"></div>
+<div id="button5"></div>
+<div id="button6"></div>
+<div id="button7"></div>
+<div id="button8"></div>
+<div id="button9"></div>
+
+<div id="timesetter1"></div>
+<div id="timesetter2"></div>
+<div id="rectangle1"></div>
+<div id="foot1"></div>
+<div id="foot2"></div>
+
+
+</body>
+
+
+
+
+</html>
