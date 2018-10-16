@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+html,body {
+	font-size:0rem;
+}
+
+
+h1{
+	font-family:'Amatic SC', cursive;
+}
+
+h2{
+	font-family: 'Muli', sans-serif; 
+	color:pink;
+	font-size:50px;
+}
+
+p{
+	font-size:12pt;
+	text-align:justify;
+	
+}
+
+.wheewhoo{
+	width:700px;
+	margin:auto;
+}
+
+#first-graph{
+	font-size:2rem;
+	font-family:'Cedarville Cursive', cursive;;
+}
+
+#second-graph{
+	margin-right:25rem;
+
+}
+
+ol{
+	list-style-type:lower-alpha;
+}
+
+#third-graph{
+	margin-left:20rem;
+
+}
+
+#KXZ{
+	font-size:;
+	font-style:bold;
+	text-decoration: line-through;
+}
+
+
+

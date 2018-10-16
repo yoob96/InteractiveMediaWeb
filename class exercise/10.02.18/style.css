@@ -1,0 +1,23 @@
+html,body {
+	min-height: 100vh;
+	background:rgb(255, 255, 255);	
+}
+
+
+#rectangle{
+	width:200px;
+	height: 200px;
+	background: #FFB4BC;
+	position:absolute;
+	top: 500px;
+	left: 500px;
+}
+
+
+#circle{
+	width: 200px;
+	height:200px;
+	background: #CBC0FF;
+	border-radius:200px;
+
+}
