@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 html, body{
-	font-family: 'Playfair Display', serif;	
+	font-family: 'Playfair Display', serif;
+	min-height: 100vh	
 }
 
 h1{
@@ -172,7 +173,7 @@ a{
 	width:355px;
 	line-height: 16pt;
 	margin-left:650px;
-	margin-top: -65px;
+	margin-top: 10px;
 
 }
 
