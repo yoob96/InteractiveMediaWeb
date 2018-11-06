@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+html, body{
+	font-family: 'Playfair Display', serif;	
+	min-height: 200vh;
+}
+
+h1{
+	font-size: 140pt;
+	font-weight: 100;
+	color: #00695c;
+}
+
+
+h2{
+	font-size: 50pt;
+	font-weight: 1;
+
+}
+
+h3{
+	font-size:18pt;
+	font-weight: 100;
+}
+
+
+h4{
+	font-size: 24pt;
+	color: #004e4f;
+}
+
+p{
+	font-size: 10pt;
+}
+
+a{
+	color:black;
+	font-size: 10pt;
+	text-decoration: none;
+}
+	a:visited {
+		color:black;
+	}
+
+	a:hover{
+		color:lightgrey;
+		text-decoration: underline;
+	}
+
+
+#first{
+	position: absolute;
+	left: 200px;
+	top: 100px;
+}
+
+#second {
+	position: absolute;
+	left: 700px;
+	top: 800px;
+}
+
+#third {
+	position: absolute;
+	left:260px;
+	top:1300px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+}
+
+#fourth {
+	position: absolute;
+	left:200px;
+	top:1470px;
+}
+
+#fifth {
+	position: absolute;
+	left: 650px;
+	top: 2200px;
+}
+
+#sixth {
+	position: absolute;
+	left:650px;
+	top:2400px;
+}
+
+
+#box1{
+	margin-left: 100px;
+	margin-top: 700px;
+	width:400px;
+}
+
+#date{
+	text-align: right;
+	letter-spacing: 10px
+}
+
+#insideleft{
+	opacity: 0;
+	font-size:30pt;
+	text-align: center;
+	margin-left: 200px;
+	margin-top: -180px;
+	width:250px;
+}
+
+#box2{
+	margin-left: 800px;
+	margin-top: -232px;
+	width:400px;
+}
+
+#location{
+	text-align:center;
+	letter-spacing: 10px;
+}
+
+#insideright{
+	opacity: 0;
+	font-size:30pt;
+	text-align: center;
+	margin-left: 48px;
+	margin-top: -170px;
+	width:250px;
+	z-index: 0;
+
+}
+
+#speakers{
+	margin-left: 700px;
+	margin-top: 380px;
+	width: 600px;
+}
+
+#description{
+	width:350px;
+	text-align:left;
+	line-height: 16pt;
+	margin-left: 100px;
+	margin-top: 130px;
+}
+
+#right{
+	margin-left:650px;
+	margin-top: 500px;
+
+}
+
+#right-graph{
+	width:355px;
+	line-height: 16pt;
+	margin-left:650px;
+	margin-top: -30px;
+
+}
+
+#left{
+	margin-left: 100px;
+	margin-top: 320px;
+}
+
+#left-graph{
+	width:355px;
+	line-height: 16pt;
+	margin-left:100px;
+	margin-top: -30px;
+}
+
+#ticketevent{
+	width:355px;
+	line-height: 16pt;
+	margin-left:650px;
+	margin-top: 30px;
+
+}
+
+#line1{
+	width: 2px;
+	height: 500px;
+	background: black;
+	transform: rotate(-25deg);
+	position: absolute;
+	top:500px;
+	left:680px;
+
+}
+
+
+#line2{
+	width: 2px;
+	height: 500px;
+	background: black;
+	transform: rotate(-25deg);
+	position: absolute;
+	top:1900px;
+	left:500px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

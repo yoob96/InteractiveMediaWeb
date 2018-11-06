@@ -1,0 +1,35 @@
+
+
+
+
+.text1{
+
+	font-family: 'Noto Serif', serif;
+	font-size: 60pt;
+	text-align: center;
+
+
+}
+
+.text2{
+	font-family: 'Noto Serif', serif;
+	font-size: 60pt;
+	text-align: center;
+	display: none;
+
+
+}
+
+
+
+@media (max-width:800px) {
+
+.text1{
+	display:none;
+}
+
+.text2{
+	display:block;
+}
+
+}
