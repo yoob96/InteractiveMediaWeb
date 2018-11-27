@@ -1,0 +1,172 @@
+
+html{
+	height: 1500px;
+	background-color: #FED2FD; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#FED2FD, #F4BCB8); /* Standard syntax (must be last) */
+    width: 100%;
+  	margin: 0;
+  	padding:0;
+  	position:relative;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.box{
+	width:45%;
+	top: 479px;
+	margin: auto;
+	position: relative;
+}
+	#caketitle {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+	}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
+.container{
+	width: 100%;
+	height: 1400px;
+	position: absolute;
+	top:20px;
+}
+
+	#cakepiece01{
+		width:10%;
+		top: 15%;
+		left: 20%;
+		position: absolute;
+		animation-name: floating;
+   		animation-duration: 3s;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: ease-in-out;
+  
+		}
+
+	#cakepiece01:hover{
+	background-color: white;
+ 	transform: translateY(4px);
+	}
+
+		@keyframes floating {
+    	from { transform: translate(0,  0px); }
+    	65%  { transform: translate(0, 15px); }
+    	to   { transform: translate(0, -0px); }    
+		}
+
+		#confetti{
+
+		height: 100%;
+		left: 0px;
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		z-index: -1;
+		}
+
+	#cakepiece02{
+		width:10%;
+		top: 8%;
+		left: 62%;
+		position: absolute;
+		animation-name: floating;
+   		animation-duration: 3s;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: ease-in-out;
+    	margin-left: 30px;
+    	margin-top: 5px;
+		}
+
+		@keyframes floating {
+    	from { transform: translate(0,  0px); }
+    	65%  { transform: translate(0, 15px); }
+    	to   { transform: translate(0, -0px); }    
+		}
+
+
+	#cakepiece03{
+		width:10%;
+		top: 40%;
+		left: 80%;
+		position: absolute;
+		animation-name: floating;
+   		animation-duration: 3s;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: ease-in-out;
+    	margin-left: 30px;
+    	margin-top: 5px;
+		}
+
+		@keyframes floating {
+    	from { transform: translate(0,  0px); }
+    	65%  { transform: translate(0, 15px); }
+    	to   { transform: translate(0, -0px); }    
+		}
+		
+	#cakepiece04{
+		width:10%;
+		top: 80%;
+		left: 60%;
+		position: absolute;
+		animation-name: floating;
+   		animation-duration: 3s;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: ease-in-out;
+    	margin-left: 30px;
+    	margin-top: 5px;
+		}
+
+		@keyframes floating {
+    	from { transform: translate(0,  0px); }
+    	65%  { transform: translate(0, 15px); }
+    	to   { transform: translate(0, -0px); }    
+		}
+		
+	#cakepiece05{
+		width:10%;
+		top: 88%;
+		left: 32%;
+		position: absolute;
+		animation-name: floating;
+   		animation-duration: 3s;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: ease-in-out;
+    	margin-left: 30px;
+    	margin-top: 5px;
+		}
+
+		@keyframes floating {
+    	from { transform: translate(0,  0px); }
+    	65%  { transform: translate(0, 15px); }
+    	to   { transform: translate(0, -0px); }    
+		}
+
+	#cakepiece06{
+		width:10%;
+		top: 50%;
+		left: 6%;
+		position: absolute;
+		animation-name: floating;
+   		animation-duration: 3s;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: ease-in-out;
+    	margin-left: 30px;
+    	margin-top: 5px;
+		}
+
+		@keyframes floating {
+    	from { transform: translate(0,  0px); }
+    	65%  { transform: translate(0, 15px); }
+    	to   { transform: translate(0, -0px); }    
+		}
