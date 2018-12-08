@@ -349,13 +349,4 @@ $("#cakepiece01").click(function() {
 });
 
 
-$( function() {
-    $( "#cakepiece01" ).draggable();
-  } );
-
-$( function() {
-    $( "#cakepiece01" ).dropable();
-  } );
-
-
 
