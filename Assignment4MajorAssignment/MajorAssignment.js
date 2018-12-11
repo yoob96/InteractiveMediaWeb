@@ -395,10 +395,10 @@ $("#cakepiece01").click(function() {
 
 
 var animation = bodymovin.loadAnimation({
-  container: document.getElementById('bm'),
+  container: document.getElementById('pool'),
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'data/data02.json'
+  path: 'bm/data.json'
 })
 
