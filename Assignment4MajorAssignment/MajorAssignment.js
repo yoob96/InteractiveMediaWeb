@@ -7,7 +7,6 @@ $("#cakepiece01").hover(function(){
     $('#outline01').hide();
 });
 
-
 $("#cakepiece02").hover(function(){
     $('#outline02').show();
 },function(){
@@ -38,8 +37,21 @@ $("#cakepiece06").hover(function(){
     $('#outline06').hide();
 });
 
+$("#cakepiece02").click(function() {
+    $('.picnic').toggle();
+});
+
 $("#cakepiece03").click(function() {
     $('#pool').toggle();
+});
+
+$(document).ready(function(){
+    $("#cakepiece04").click(function(){
+    	$('#lilypond').toggle();
+        $("#lilypond").animate({
+            top: '1018px',
+        });
+    });
 });
 
 $("#cakepiece05").click(function() {

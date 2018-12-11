@@ -56,6 +56,23 @@ html,body{
 	    	z-index: -1;
 		}
 
+.picnic{
+	width:100%;
+	top:0px;
+	position:absolute;
+	display:none;
+	}	
+
+	#picnic{
+		width:46%;
+		position:absolute;
+		top:25%;
+		left:25%;
+	}
+
+	#picnicbackground{
+		position:relative;
+	}
 
 .cakepiece02container {
 	margin:0;
@@ -121,6 +138,13 @@ html,body{
 	    }
 
 
+	#lilypond{
+		width:100%;
+		position: absolute;
+		bottom: 0px;
+    	display:none;
+		animation-name:moveup;
+	}
 
 .cakepiece04container {
 	margin:0;
