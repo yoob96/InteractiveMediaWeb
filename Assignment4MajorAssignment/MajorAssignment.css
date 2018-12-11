@@ -147,11 +147,11 @@ html,body{
 	    	z-index: -1;
 		}
 
-#canvas{
-	position:absolute;
-	top:0px;
-	display:block;
-}
+	#canvas{
+		position:absolute;
+		top:0px;
+		display:none;
+	}
 
 .cakepiece05container {
 	margin:0;
