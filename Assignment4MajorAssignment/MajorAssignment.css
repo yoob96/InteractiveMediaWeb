@@ -150,7 +150,7 @@ html,body{
 #canvas{
 	position:absolute;
 	top:0px;
-	display:none;
+	display:block;
 }
 
 .cakepiece05container {
