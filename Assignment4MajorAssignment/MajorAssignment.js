@@ -42,11 +42,17 @@ $("#cakepiece03").click(function() {
     $('#pool').toggle();
 });
 
+$("#cakepiece05").click(function() {
+    $('#canvas').toggle();
+});
+
 $("#cakepiece06").click(function() {
     $('.nightsky').toggle();
 });
 
 
+
+//confetti
 $("#cakepiece01").click(function() {
     $('#confetti').toggle();
     var frameRate = 30;
@@ -397,7 +403,7 @@ $("#cakepiece01").click(function() {
     });
 });
 
-
+//pool
 var animation = bodymovin.loadAnimation({
   container: document.getElementById('pool'),
   renderer: 'svg',
@@ -406,3 +412,70 @@ var animation = bodymovin.loadAnimation({
   path: 'bm/data.json'
 })
 
+
+//backyard
+
+var CarrotBackground = {
+  carrotHeight: 83.813,
+  carrotWidth: 55,
+  carrots: [],
+  carrotImage: 'Cake/carrot.png',
+  maxCarrots: 20,
+  minScale: 0.4,
+  draw: function() {
+    this.setCanvasSize();
+    this.ctx.clearRect(0, 0, this.w, this.h);
+    for (var i = 0; i < this.carrots.length; i++) {
+      var carrot = this.carrots[i];
+      carrot.image = new Image();
+      carrot.image.style.height = carrot.height;
+      carrot.image.src = this.carrotImage;
+      this.ctx.globalAlpha = carrot.opacity;
+      this.ctx.drawImage (carrot.image, carrot.x, carrot.y, carrot.width, carrot.height);
+    }
+    this.move();
+  },
+  move: function() {
+    for(var b = 0; b < this.carrots.length; b++) {
+      var carrot = this.carrots[b];
+      carrot.y += carrot.ys;
+      if(carrot.y > this.h) {
+        carrot.x = Math.random() * this.w;
+        carrot.y = -1 * this.carrotHeight;
+      }
+    }
+  },
+  setCanvasSize: function() {
+    this.canvas.width = 1425;
+    this.canvas.height = 1500;
+    this.w = this.canvas.width;
+    this.h = this.canvas.height;
+  },
+  initialize: function() {
+    this.canvas = $('#canvas')[0];
+
+    if(!this.canvas.getContext)
+      return;
+
+    this.setCanvasSize();
+    this.ctx = this.canvas.getContext('2d');
+
+    for(var a = 0; a < this.maxCarrots; a++) {
+      var scale = (Math.random() * (1 - this.minScale)) + this.minScale;
+      this.carrots.push({
+        x: Math.random() * this.w,
+        y: Math.random() * this.h,
+        ys: Math.random() + 1,
+        height: scale * this.carrotHeight,
+        width: scale * this.carrotWidth,
+        opacity: scale
+      });
+    }
+
+    setInterval($.proxy(this.draw, this), 30);
+  }
+};
+
+$(document).ready(function(){
+  CarrotBackground.initialize();
+});
