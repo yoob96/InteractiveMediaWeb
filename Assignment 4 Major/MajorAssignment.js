@@ -1,5 +1,50 @@
-/* Confetti by Patrik Svensson (http://metervara.net) */
+
+
+
+$("#cakepiece01").hover(function(){
+    $('#outline01').show();
+},function(){
+    $('#outline01').hide();
+});
+
+
+$("#cakepiece02").hover(function(){
+    $('#outline02').show();
+},function(){
+    $('#outline02').hide();
+});
+
+$("#cakepiece03").hover(function(){
+    $('#outline03').show();
+},function(){
+    $('#outline03').hide();
+});
+
+$("#cakepiece04").hover(function(){
+    $('#outline04').show();
+},function(){
+    $('#outline04').hide();
+});
+
+$("#cakepiece05").hover(function(){
+    $('#outline05').show();
+},function(){
+    $('#outline05').hide();
+});
+
+$("#cakepiece06").hover(function(){
+    $('#outline06').show();
+},function(){
+    $('#outline06').hide();
+});
+
+
+$("#cakepiece06").click(function() {
+    $('.nightsky').toggle();
+});
+
 $("#cakepiece01").click(function() {
+    $('#confetti').toggle();
     var frameRate = 30;
     var dt = 1.0 / frameRate;
     var DEG_TO_RAD = Math.PI / 180;
@@ -349,4 +394,11 @@ $("#cakepiece01").click(function() {
 });
 
 
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('bm'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'data/data02.json'
+})
 
