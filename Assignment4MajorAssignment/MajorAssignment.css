@@ -363,7 +363,7 @@ html,body{
 		}
 
 		#nightclouds{
-		   background:transparent url(images/clouds.png) repeat top center;
+		   background:transparent url(images/nightclouds.png) repeat top center;
 		  -moz-animation:move-nightclouds-back 200s linear infinite;
 		  -ms-animation:move-nightclouds-back 200s linear infinite;
 		  -o-animation:move-nightclouds-back 200s linear infinite;
