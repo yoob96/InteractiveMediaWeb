@@ -102,11 +102,10 @@ html,body{
 }
 
 	#pool{
-		width: 	750px;
-  		height: 600px;
+		width: 1424px;
   		margin:auto;
   		position:relative;
-  		top:0%;
+  		top:-11%;
 	}
 
 	#cakepiece03{
