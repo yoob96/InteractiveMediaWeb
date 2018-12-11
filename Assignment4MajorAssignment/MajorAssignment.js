@@ -38,10 +38,14 @@ $("#cakepiece06").hover(function(){
     $('#outline06').hide();
 });
 
+$("#cakepiece03").click(function() {
+    $('#pool').toggle();
+});
 
 $("#cakepiece06").click(function() {
     $('.nightsky').toggle();
 });
+
 
 $("#cakepiece01").click(function() {
     $('#confetti').toggle();
